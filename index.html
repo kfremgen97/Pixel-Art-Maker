@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- set the character encoding -->
+    <meta charset="UTF-8">
+    <!-- set the device viewport width -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- title -->
+    <title>Pixel Art Maker</title>
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- javascript -->
+    <script src="js/PixelArtMakerController.js" type="module"></script>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="title">Pixel Art Maker</h1>
+    </header>
+
+    <main class="main">
+
+        <!-- pixel form -->
+        <form class="pixel-form">
+            <label for="form-row">Rows:</label>
+            <input id="form-row" class="pixel-form__row" type="number">
+            <label for="form-column">Columns:</label>
+            <input id = "form-column" class="pixel-form__column" type="number">
+            <button class="pixel-form__submit" type="submit">Submit</button>
+        </form>
+
+        <!-- pixel table -->
+        <table class="pixel-table">
+
+        </table>
+
+    </main>
+</body>
+</html>
