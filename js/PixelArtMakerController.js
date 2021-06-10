@@ -9,6 +9,7 @@ const updateDimensions = function(rows,columns){
 
         // Update the state
         state.updateGrid(rows,columns);
+        console.log(state.getGrid());
 
         // render the view for updated state
         pixelArtMakerView.renderGrid(...state.getGrid())

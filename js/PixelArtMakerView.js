@@ -2,6 +2,7 @@
 class PixelArtMakerView {
     // elements
     form = document.querySelector('.pixel-form');
+    grid = document.querySelector('.pixel-grid');
 
     // Add form submit listener
     addSubmissionHandler(handler) {
@@ -20,7 +21,29 @@ class PixelArtMakerView {
     }
 
     renderGrid(rows,columns){
-        console.log(rows,columns);
+
+        let htmlGrid = '';
+
+        // Loop over the rows
+        for(let x=0 ; x<rows ; x++){
+            // Add opening table row tag
+            htmlGrid += `<tr class="pixel-table__row">`
+            //Loop over the columns
+            for(let y= 0 ; y<columns ; y++){
+
+                // Add the column to the row
+                htmlGrid += `<td class=pixel-table__data data-row="${x}" data-column="${y}"> </td>`
+
+            }
+
+            // Add the closing table row tag
+            htmlGrid += `</tr>`;
+        }
+
+        // Replace the old grid with the new grid
+        this.grid.innerHTML = htmlGrid;
+
+
     }
 
     // Render error
