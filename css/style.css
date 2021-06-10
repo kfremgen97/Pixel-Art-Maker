@@ -1,1 +1,51 @@
+/********* base *********/
 
+/*set the margin,padding, and box style for all elements*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html{
+    /*Set the font size to 62.5% of parent,i.e the browser default font-size(16px)*/
+    font-size: 62.5%;
+    /*Will cause all elements to become border-box*/
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/******** header *********/
+
+.header{
+    padding: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+
+}
+
+.logo{
+    display: inline-block;
+    height: 5rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.title{
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+/******* main *********/
+
+.main{
+}
