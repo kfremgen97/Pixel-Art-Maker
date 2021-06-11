@@ -48,7 +48,17 @@ body{
 
 .pixel-color{
     margin-left: auto;
+}
 
+.pixel-color__input{
+    outline: none;
+    bordeR:.2rem solid transparent;
+    transition: all .2s;
+}
+
+.pixel-color__input:active,
+.pixel-color__input:focus{
+    border: .2rem solid slateblue;
 }
 /******* main *********/
 
@@ -97,6 +107,10 @@ body{
 .pixel-form__submit:hover,
 .pixel-form__submit:active{
     background-color: darkslateblue;
+}
+
+.pixel-form__submit:focus{
+    border: .2rem solid mediumslateblue;
 }
 
 .pixel-grid{
