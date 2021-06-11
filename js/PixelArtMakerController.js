@@ -2,7 +2,11 @@
 import {state} from './PixelArtMakerModel.js';
 import pixelArtMakerView from './PixelArtMakerView.js';
 
-// Update the dimensions of the grid
+/**
+ *Update the dimensions of the grid in the model and then the view
+ * @param {number} rows - The number of rows for the grid
+ * @param {number} columns - The number of columns for the grid
+ */
 const updateDimensions = function(rows,columns){
     //Validate
     try {
@@ -23,14 +27,20 @@ const updateDimensions = function(rows,columns){
     }
 };
 
-// Update the color for the pixels in the grid
+/**
+ *Update the color in the model
+ * @param {string} color - String representation of a hex color
+ */
 const updateColor = function(color){
     console.log(color);
     // Update the color in the state
     state.updateColor(color);
 };
 
-// Fill in the pixels of the grid
+/**
+ * Fill in the background of the element
+ * @param {Element} element - The element that caused the event to fire
+ */
 const fillInPixel = function(element){
     // Check to make sure a user clicked on a pixel in the grid
     // The pixels have a class name of pixel, if the element doesnt have the class name return
