@@ -2,6 +2,7 @@
 class PixelArtMakerView {
 
     // elements
+    colorChanger = document.querySelector('.pixel-color');
     form = document.querySelector('.pixel-form');
     grid = document.querySelector('.pixel-grid');
 
@@ -51,6 +52,14 @@ class PixelArtMakerView {
             // Call the handler
             handler(rows, columns);
 
+        })
+    }
+
+    addColorChangeHandler(handler){
+        this.colorChanger.addEventListener('input',function(event){
+
+            // Call the handler , passing in the value of the color upon change
+            handler(event.target.value)
         })
     }
 }

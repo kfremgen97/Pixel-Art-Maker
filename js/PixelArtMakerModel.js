@@ -2,7 +2,7 @@
 export const state = {
     _rows: 10,
     _columns: 10,
-    _color: 'black',
+    _color: '#000000',
     getGrid: function(){
         return [this._rows,this._columns];
     },

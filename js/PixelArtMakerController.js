@@ -22,7 +22,15 @@ const updateDimensions = function(rows,columns){
     }
 };
 
+const updateColor = function(color){
+    console.log(color);
+    // Update the color in the state
+    state.updateColor(color);
+};
 
 // Add the event listeners
 pixelArtMakerView.addSubmissionHandler(updateDimensions);
+pixelArtMakerView.addColorChangeHandler(updateColor);
+
+// Draw the grid
 pixelArtMakerView.renderGrid(...state.getGrid());
