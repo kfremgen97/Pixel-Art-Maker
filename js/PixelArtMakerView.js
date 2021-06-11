@@ -1,7 +1,7 @@
 // Pixel Art Maker class
 class PixelArtMakerView {
 
-    // elements
+    // Elements
     colorChanger = document.querySelector('.pixel-color');
     form = document.querySelector('.pixel-form');
     grid = document.querySelector('.pixel-grid');
@@ -19,7 +19,7 @@ class PixelArtMakerView {
             for(let y= 0 ; y<columns ; y++){
 
                 // Add the column to the row
-                htmlGrid += `<td class=pixel-grid__column data-row="${x}" data-column="${y}"> </td>`
+                htmlGrid += `<td class="pixel pixel-grid__column" data-row="${x}" data-column="${y}"> </td>`
 
             }
 
@@ -62,9 +62,16 @@ class PixelArtMakerView {
             handler(event.target.value)
         })
     }
+
+    addPixelHandler(handler){
+        this.grid.addEventListener('click',function(event){
+            // Call the handler, passing in the target that caused the event to fire
+            handler(event.target);
+        });
+    }
 }
 
-
+// Export a new instance of the class
 export default new PixelArtMakerView();
 
 

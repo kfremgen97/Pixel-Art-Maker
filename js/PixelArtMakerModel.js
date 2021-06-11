@@ -1,4 +1,5 @@
 // Hold the state of the application
+// Export the state object to accessible throughout application
 export const state = {
     _rows: 10,
     _columns: 10,
