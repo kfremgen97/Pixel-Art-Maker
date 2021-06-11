@@ -30,6 +30,7 @@ body{
     display: flex;
     justify-content: start;
     align-items: center;
+    margin-bottom: 2rem;
 
 }
 
@@ -45,6 +46,10 @@ body{
     font-weight: 100;
 }
 
+.pixel-color{
+    margin-left: auto;
+
+}
 /******* main *********/
 
 .main{
