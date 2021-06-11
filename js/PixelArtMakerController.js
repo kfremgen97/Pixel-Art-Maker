@@ -25,3 +25,4 @@ const updateDimensions = function(rows,columns){
 
 // Add the event listeners
 pixelArtMakerView.addSubmissionHandler(updateDimensions);
+pixelArtMakerView.renderGrid(...state.getGrid());

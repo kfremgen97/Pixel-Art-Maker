@@ -1,7 +1,7 @@
 // Hold the state of the application
 export const state = {
-    _rows: 100,
-    _columns: 100,
+    _rows: 10,
+    _columns: 10,
     _color: 'black',
     getGrid: function(){
         return [this._rows,this._columns];
